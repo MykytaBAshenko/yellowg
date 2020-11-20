@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    <body>
+    </head>
     <style>
         *{
             font-family: 'Exo 2', sans-serif;
@@ -25,6 +26,7 @@
         }
         button, a {
             transition: .4s;
+            cursor: pointer;
         }
         .navbar-logo{
             transform: translate(0, 25px);
@@ -142,6 +144,7 @@
         .navbar-meta-data-phone-exact a:hover{
             text-decoration: underline;
         }
+        
         .navbar-meta-data-phone-exact-exact{
             display: grid;
             align-items: center;
@@ -491,27 +494,27 @@
             <div class="reasons_for_work_text">
                 <div class="reasons_for_work_text-exact">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-<br>
-<br>
+                Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                <br>
+                <br>
 
-Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-<br>
-<br>
-Причины работы с нами:
-<br>
+                Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                <br>
+                <br>
+                Причины работы с нами:
+                <br>
 
-- Lorem ipsum dolor sit ame<br>
-- Lorem ipsum dolor sit ame<br>
-- Lorem ipsum dolor sit ame<br>
-- Lorem ipsum dolor sit ame<br>
-- Lorem ipsum dolor sit ame
+                - Lorem ipsum dolor sit ame<br>
+                - Lorem ipsum dolor sit ame<br>
+                - Lorem ipsum dolor sit ame<br>
+                - Lorem ipsum dolor sit ame<br>
+                - Lorem ipsum dolor sit ame
 
-</div> 
-<div class="reasons_for_work_text-div">
-    <a class="reasons_for_work_text_button"  href="#">подробнее</a>
-</div>
-</div>
+                </div> 
+                <div class="reasons_for_work_text-div">
+                    <a class="reasons_for_work_text_button"  href="#">подробнее</a>
+                </div>
+            </div>
             <form action="#" class="reasons_for_work_form">
                 <div class="reasons_for_work_form-title">
                     получить каталог авто с расчетом под ваш бюджет
@@ -537,8 +540,190 @@ Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </form>
         </div>
       </div>
+      <div class="cars-posts">
+        <div class="cars-posts-shell">
+            <div class="cars-posts-title">
+                Мы поставляем авто и запчасти к ним на такие марки
+            </div>
+            <img src="images/cars-comp.png" alt="">
+        </div>
+      </div>
+      <div class="vigoda">
+        <div class="vigoda-shell">
+            <div class="vigoda-title">
+                выгоды и бюджеты
+            </div>
+            <div class="vigoda-main">
+                <div class="vigoda-control">
+                    <div class="vigoda-control-exact">
+                        <button class="btn-video-ctr" onclick="video_c(1)" id="ctrl-btn1"><span>до $10 000</span> <i class="fa fa-long-arrow-right"></i></button>
+                        <button  class="btn-video-ctr"  onclick="video_c(2)" id="ctrl-btn2"><span>от $10 000 до $16 000</span> <i class="fa fa-long-arrow-right"></i></button>
 
+                        <button class="btn-video-ctr"  onclick="video_c(3)" id="ctrl-btn3"><span>от $16 000 до $25 000</span> <i class="fa fa-long-arrow-right"></i></button>
+                        <button class="btn-video-ctr"  onclick="video_c(4)"  id="ctrl-btn4"><span>более $25 000</span> <i class="fa fa-long-arrow-right"></i></button>
+                        <button class="btn-video-ctr"  onclick="video_c(5)" id="ctrl-btn5"><span>эксклюзив</span> <i class="fa fa-long-arrow-right"></i></button>
+
+
+                    </div>
+                    <button class="get-catalog">
+                        получить каталог
+                    </button>
+                </div>
+                <div class="video-container">
+                    <iframe  id="video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+                </div>
+      </div>
+    </div>
+      <script>
+          let videodiv = document.getElementById("video-iframe") 
+          let ctrl1 = document.getElementById("ctrl-btn1")
+          let ctrl2 = document.getElementById("ctrl-btn2")
+          let ctrl3 = document.getElementById("ctrl-btn3")
+          let ctrl4 = document.getElementById("ctrl-btn4")
+          let ctrl5 = document.getElementById("ctrl-btn5")
+        let btns = document.getElementsByClassName("btn-video-ctr")
+        //   let 
+        let arr_v = [
+            "https://www.youtube.com/embed/5gYoUm3wLHI",
+            "https://www.youtube.com/embed/FwUsIr5OHFE",
+            "https://www.youtube.com/embed/uhNHX5fbnkg",
+            "https://www.youtube.com/embed/FwUsIr5OHFE",
+            "https://www.youtube.com/embed/uhNHX5fbnkg"
+        ]
+        function video_c(n){
+            for(let yy = 0; yy < btns.length; yy++){
+                btns[yy].className = "btn-video-ctr"
+            }
+            if(n == 1){
+                videodiv.src = arr_v[n-1]
+                ctrl1.className += " active"
+            }
+            if(n == 2){
+                videodiv.src = arr_v[n-1]
+                ctrl2.className += " active"
+            }
+            if(n == 3){
+                videodiv.src = arr_v[n-1]
+                ctrl3.className += " active"
+            }
+            if(n == 4){
+                videodiv.src = arr_v[n-1]
+                ctrl4.className += " active"
+            }
+            if(n == 5){
+                videodiv.src = arr_v[n-1]
+                ctrl5.className += " active"
+            }
+        }
+      </script>
       <style>
+          .get-catalog{
+              color: white;
+              font-size: 18px;
+              font-weight: bold;
+              text-transform: uppercase;
+              border-radius: 0;
+              border: 2px solid #ffcc00;
+              background-color: #ffcc00;
+              width: 270px;
+              height: 50px;
+
+              justify-self: start;
+              align-self: end;
+          }
+          .get-catalog:hover{
+              background-color: #333333;
+              border-color: #333333;
+              color: #ffcc00;
+          }
+          .vigoda-shell{
+              display: grid;
+              max-width: 1350px;
+              width: 100%;
+          }
+          .vigoda-control-exact button{
+            background-color: transparent;
+            border: none;
+            width: 310px;
+            transition:0s ;
+            padding: 0 25px;
+            display: grid;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            align-items: center;
+            font-weight: bold;
+            grid-template-columns: auto 1fr;
+            justify-items: center;
+          }
+          .vigoda-control-exact button:hover{
+            color: #ffcc00;
+          }
+          
+          .vigoda-control-exact button.active:hover{
+            color: #333333;
+          }
+          .vigoda-control-exact button.active i {
+            opacity: 1;
+
+          }
+          .vigoda-control-exact button.active{
+              padding: 20px 25px;
+                border: 2px solid #ffcc00;
+          }
+          .vigoda-control-exact button i{
+              opacity: 0;
+          }
+          .vigoda-control{
+              display: grid;
+              grid-template-rows: auto 1fr;
+          }
+          .vigoda-title{
+              font-size: 36px;
+              text-transform: uppercase;
+              font-weight: bold;
+              padding-bottom: 85px;
+          }
+          .vigoda-control-exact{
+              display: grid;
+            row-gap: 20px;
+          }
+          .vigoda{
+              padding: 115px 45px 170px;
+              display: grid;
+              justify-items: center;
+          }
+          .vigoda-main{
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+          }
+          .video-container{
+              display: grid;
+          }
+          .video-container iframe{
+              height: 370px;
+              width: 100%;
+          }
+          .cars-posts{
+              display: grid;
+              background-color: #ffcc00;
+              padding: 65px 45px;
+              justify-items: center;
+          }
+          .cars-posts-title{
+              text-align: center;
+              font-size: 36px;
+              font-weight: bold;
+              padding-bottom: 50px;
+              text-transform: uppercase;
+          }
+          .cars-posts-shell{
+              max-width: 1350px;
+              width: 100%;
+          }
+          .cars-posts-shell img{
+              width: 100%;
+          }
           .form-social-control-container{
               display:grid;
               justify-items: center;
@@ -725,8 +910,47 @@ Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit
             max-width: 1350px;
         }
         </style>
-
-
+        <div class="imdge-block">
+            <div class="imdge-block-shell">
+                <div class="imdge-block-title">
+                    Имиджевый блок о нас
+                </div>
+                <div class="imdge-block-map">
+                    <img src="./images/imdge.png" alt="">
+                    <img src="./images/imdge.png" alt="">
+                    <img src="./images/imdge.png" alt="">
+                    <img src="./images/imdge.png" alt="">
+                    <img src="./images/imdge.png" alt="">
+                </div>
+            </div>            
+        </div>
+        <style>
+            .imdge-block{
+                background-color: #ffcc00;
+                display: grid;
+                justify-items: center;
+                padding: 70px 45px 40px;
+            }
+            .imdge-block-shell{
+                display: grid;
+                justify-items: center;
+                width: 100%;
+                max-width: 1350px;
+            }
+            .imdge-block-map{
+                display: grid;
+                column-gap: 30px;
+                grid-template-columns: auto auto  auto auto auto ;
+                justify-items: center;
+            }
+            .imdge-block-title{
+                padding-bottom: 60px;
+                text-transform: uppercase;
+                justify-self: start;
+                font-size: 36px;
+                font-weight: bold;
+            }
+        </style>
         <div class="news-blog">
             <div class="news-blog-shell">
                 <div class="news-blog-title">
@@ -754,6 +978,7 @@ Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </div>
             </div>
         </div>
+        
         <div class="call-to-us">
             <div class="call-to-us-shell">
                 <div class="call-to-us-text">
@@ -771,6 +996,45 @@ Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         <span>0 800 311 011</span>
                     </div>
                     </a>
+                </div>
+            </div>
+        </div>
+        <style>
+            .our-partners{
+                display: grid;
+                justify-items: center;
+                padding: 95px 45px 75px;
+            }
+            .our-partners-shell{
+                max-width: 1350px;
+   
+                width: 100%;
+            }
+            .our-partners-map{
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .our-partners-title{
+                padding-bottom: 70px;
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        </style>
+        <div class="our-partners">
+            <div class="our-partners-shell">
+                <div class="our-partners-title">наши партнеры</div>
+                <div class="our-partners-map">
+                    <img src="./images/our_partner.png"/>
+                    <img src="./images/our_partner.png"/>
+                    <img src="./images/our_partner.png"/>
+                    <img src="./images/our_partner.png"/>
+                    <img src="./images/our_partner.png"/>
+                    <img src="./images/our_partner.png"/>
+                    <img src="./images/our_partner.png"/>
+
                 </div>
             </div>
         </div>
@@ -1193,26 +1457,26 @@ Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit
  }
 </style>
 <script>
-    let headerPC = document.getElementById("header-pc");
+//     let headerPC = document.getElementById("header-pc");
 
 
 
-var f=function(){
-var event = function(e){
+// var f=function(){
+// var event = function(e){
 
 
-	var y =window.scrollY;
+// 	var y =window.scrollY;
 
-	if (y>0 && headerPC.className != 'header-pc-version responsive'){
-		headerPC.className += " responsive";
-	}
-	 if(y== 0){
-		headerPC.className = "header-pc-version";
-	}	
-}
-window.addEventListener('scroll',event,false);
-	}
+// 	if (y>0 && headerPC.className != 'header-pc-version responsive'){
+// 		headerPC.className += " responsive";
+// 	}
+// 	 if(y== 0){
+// 		headerPC.className = "header-pc-version";
+// 	}	
+// }
+// window.addEventListener('scroll',event,false);
+// 	}
 
-	document.addEventListener('DOMContentLoaded',f,false);
+// 	document.addEventListener('DOMContentLoaded',f,false);
     </script>
 </html>
