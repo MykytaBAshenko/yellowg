@@ -359,6 +359,7 @@
     height: 100vh;
     width: 100%;
     display: grid;
+    padding: 0 45px;
     align-items: end;
     justify-items: center;
     background-image: url(images/bg.png);
@@ -914,6 +915,137 @@
             max-width: 1350px;
         }
         </style>
+
+
+	<div class="calculator" id="calculator">
+
+		<div class="calculator-title">
+			<span>Расчёт авто из США под ключ</span>
+		</div>
+		<div class="container">
+			<div class="calculator-form">
+				<div class="calculator-form__data">
+					<div class="calculator-form__row calculator-form__row--cost">
+						<div class="icon"><img src="images/dollar.png" alt=""></div>
+						<div class="name">Стоимость на аукционе, $</div>
+						<div class="input">
+							<input type="text" name="calculator_cost">
+						</div>
+					</div>
+					<div class="calculator-form__row calculator-form__row--type">
+						<div class="type-item active" data-index="1">
+							<div class="type-item__circle"></div>
+							<div class="type-item__name">Бензин</div>
+						</div>
+						<div class="type-item" data-index="2">
+							<div class="type-item__circle"></div>
+							<div class="type-item__name">Дизель</div>
+						</div>
+						<div class="type-item" data-index="3">
+							<div class="type-item__circle"></div>
+							<div class="type-item__name">Гибрид</div>
+						</div>
+						<div class="type-item" data-index="4">
+							<div class="type-item__circle"></div>
+							<div class="type-item__name">Электро</div>
+						</div>
+					</div>      
+					<div class="calculator-form__row calculator-form__row--year">
+						<div class="icon"><img src="images/calendar.png" alt=""></div>
+						<div class="name">Год выпуска</div>
+						<div class="input">
+							<select name="calculator_year">
+								<option value="1995">1995</option>
+								<option value="1996">1996</option>
+								<option value="1997">1997</option>
+								<option value="1998">1998</option>
+								<option value="1999">1999</option>
+								<option value="2001">2001</option>
+								<option value="2002">2002</option>
+								<option value="2003">2003</option>
+								<option value="2004">2004</option>
+								<option value="2005">2005</option>
+								<option value="2006">2006</option>
+								<option value="2007">2007</option>
+								<option value="2008">2008</option>
+								<option value="2009">2009</option>
+								<option value="2010">2010</option>
+								<option value="2011">2011</option>
+								<option value="2012">2012</option>
+								<option value="2013">2013</option>
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator-form__row calculator-form__row--turbo">
+						<div class="icon"><img src="images/turbo.png" alt=""></div>
+						<div class="name">Объем двигателя, см3</div>
+						<div class="name name__electro">Объем АКБ, кВт/час</div>
+						<div class="input">
+							<input type="text" name="calculator_turbo">
+						</div>
+					</div>
+				</div>
+				<div class="calculator-form__button">
+					<p>Расчет приблизительный. Для точного расчета оставьте заявку на бесплатный подбор автомобиля.</p>
+					<div class="order-btn">
+						<span class="order-btn__text">Рассчитать</span>
+					</div>
+				</div>
+			</div>
+			<div class="calculator-result">
+				<div class="calculator-result__data">
+					<div class="calculator-result__title">РЕЗУЛЬТАТЫ РАСЧЁТА</div>
+					<div class="calculator-result__row" id="calculator-price">
+						<div class="row-name">Цена лота на аукционе</div>
+						<div class="row-num">0</div>
+					</div>
+					<!-- <div class="calculator-result__row" id="calculator-sbor">
+						<div class="row-name">Сбор аукциона</div>
+						<div class="row-num">0</div>
+					</div> -->
+					<div class="calculator-result__row" id="calculator-service">
+						<div class="row-name">Наши услуги</div>
+						<div class="row-num">650</div>
+					</div>
+					<!-- <div class="calculator-result__row" id="calculator-strahovka">
+						<div class="row-name">Страховка</div>
+						<div class="row-num">0</div>
+					</div> -->
+					<div class="calculator-result__row" id="calculator-port">
+						<div class="row-name">Доставка машины до места отправки</div>
+						<div class="row-num">350</div>
+					</div>
+					<div class="calculator-result__row" id="calculator-dellivery">
+						<div class="row-name">Доставка в Украину</div>
+						<div class="row-num">850</div>
+					</div>
+					<div class="calculator-result__row" id="calculator-customs">
+						<div class="row-name">Таможенные платежи</div>
+						<div class="row-num">0</div>
+					</div>
+					<div class="calculator-result__row" id="calculator-total">
+						<div class="row-name">ВСЕГО</div>
+						<div class="row-num">1250</div>
+					</div>
+
+				</div>
+				<div class="calculator-result__button">
+					<div class="order-btn callback__call" id="calculate-button">
+						<span class="order-btn__text as_event_1">Заказать</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
         <div class="imdge-block">
             <div class="imdge-block-shell">
                 <div class="imdge-block-title">
@@ -1484,3 +1616,495 @@
 // 	document.addEventListener('DOMContentLoaded',f,false);
     </script>
 </html>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"  ></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+
+	function validateNumber(event) {
+		var theEvent = event || window.event;
+		var key = theEvent.keyCode || theEvent.which;
+		key = String.fromCharCode( key );
+		var regex = /[0-9]|\./;
+		if( !regex.test(key) ) {
+			theEvent.returnValue = false;
+			if(theEvent.preventDefault) theEvent.preventDefault();
+		}
+	}
+
+
+	$('.calculator-form input').on('keypress', function(event) {
+		validateNumber(event)
+	});
+
+	$('.calculator-form__row--type .type-item').click(function(){
+		$('.calculator-form__row--type .type-item').removeClass('active')
+		$(this).addClass('active')
+
+		if ($(this).data('index') == 4) {
+			$('.calculator-form__row--turbo').addClass('electro')
+		} else {
+			$('.calculator-form__row--turbo').removeClass('electro')
+		}
+	})
+
+	$('.calculator-form .order-btn').click(function(){
+		let calc = $('.calculator-form');
+			price = calc.find('input[name="calculator_cost"]').val();
+			type = $('.calculator-form__row--type .type-item.active').data('index')
+			year = calc.find('[name="calculator_year"] :selected').text();
+			volume = calc.find('input[name="calculator_turbo"]').val();
+			type_tax = 0;
+			volume_tax = 0;
+			age_tax = 0;
+
+		if (!price) {
+			price = 0;
+		}
+
+		if (!volume) {
+			volume = 0;
+		}
+
+		// тип двигателя
+		if (type == 2) {
+			type_tax = 75;
+		} else {
+			type_tax = 50;
+		}
+
+		// объем двигателя
+		volume_tax = volume * 0.001;
+
+		if (volume_tax > 3) {
+			if (type == 2) {
+				type_tax = 150;
+			} else {
+				type_tax = 100;
+			}
+		}
+
+		// коэф. возраста
+		if (2020 - year - 1 > 15) {
+			age_tax = 15;
+		} else if (2020 - year - 1 < 1) {
+			age_tax = 1;
+		} else {
+			age_tax = 2020 - year - 1;
+		}
+
+		
+		let services = 650;
+			port = 350;
+			dellivery = 850;
+			customs_duty = price * 0.1;
+			customs_tax = type_tax * volume_tax * age_tax;
+			customs_all_tax = parseInt(customs_duty + customs_tax);
+			customs_vat = parseInt(price * 0.2 + customs_all_tax * 0.2)
+			customs = parseInt(customs_all_tax + customs_vat);
+			total = Number(price) + Number(services) + Number(port) + Number(dellivery) + Number(customs);
+
+		// console.log(customs_duty)
+		// console.log(customs_tax)
+		// console.log(customs_all_tax)
+		// console.log(customs_vat)
+		// console.log(customs)
+		// console.log(total)
+
+		$('#calculator-price .row-num').text(price)
+		// $('#calculator-sbor .row-num').text()
+		$('#calculator-service .row-num').text(services)
+		// $('#calculator-strahovka .row-num').text()
+		$('#calculator-port .row-num').text(port)
+		$('#calculator-dellivery .row-num').text(dellivery)
+		$('#calculator-customs .row-num').text(customs)
+		$('#calculator-total .row-num').text(total)
+	})
+
+
+	// faq
+	$('.faq-item').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.faq-item').removeClass('active')
+			$('.faq-item__body').slideUp(200)
+			$(this).toggleClass('active')
+			$(this).find('.faq-item__body').slideDown(200)	
+		}
+	})
+
+
+	// budget
+	$('.budget__slider').slick({
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		arrows: true,
+		infinite: true,
+		draggable: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		prevArrow: '<div class="arrow-left"><svg viewBox="0 0 320 512"><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg></div>',
+		nextArrow: '<div class="arrow-right"><svg viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></div>',
+		responsive: [
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+		    },
+		    {
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+		    },
+		    {
+				breakpoint: 415,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+		    }
+		]
+	});
+
+	$('.budget-num').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.budget-num, .budget__slider').removeClass('active')
+			$(this).addClass('active')
+			$('#' + $(this).data('slider')).addClass('active')
+		}
+	});
+
+
+	[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+		img.removeAttribute('src');
+		img.setAttribute('src', img.getAttribute('data-src'));
+		img.onload = function() {img.removeAttribute('data-src');};
+	});	
+
+
+
+</script>
+<style>
+    .calculator {
+  padding: 0 45px 100px;
+  align-items: stretch;
+  display: grid;
+  justify-items: center;
+}
+.calculator .container {
+  display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 1350px;
+  background: #ebebeb;
+
+}
+@media (max-width: 768px) {
+  .calculator .container {
+    justify-content: center;
+    width: calc(100% - 30px);
+  }
+}
+.calculator-title {
+    justify-self: center;
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  max-width: 1350px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 70px;
+  line-height: 1;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .calculator-title:before {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-title:before {
+    display: none;
+  }
+}
+.calculator-title span {
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .calculator-title span {
+    font-size: 32px;
+    padding: 0;
+    min-width: 0px;
+    max-width: 100%;
+  }
+}
+.calculator-form, .calculator-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px 60px 35px 50px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .calculator-form, .calculator-result {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+}
+.calculator-form {
+}
+.calculator-form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: -2px;
+  width: 3px;
+  height: calc(100% - 40px);
+  background-color: #2e343b;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .calculator-form:after {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-form {
+    padding-right: 40px;
+  }
+}
+.calculator-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.calculator-form__row .icon {
+  width: 22px;
+}
+.calculator-form__row .icon img {
+  filter: brightness(0);
+}
+.calculator-form__row .name {
+  width: 160px;
+  font-size: 20px;
+  line-height: 1;
+  color: #2e343b;
+}
+.calculator-form__row .name__electro {
+  display: none;
+}
+.calculator-form__row.electro .name {
+  display: none;
+}
+.calculator-form__row.electro .name__electro {
+  display: block;
+}
+.calculator-form__row .input {
+  width: calc(100% - 200px);
+}
+.calculator-form__row .input input {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #2e343b;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #2e343b;
+  background: transparent;
+}
+.calculator-form__row .input input:placeholder {
+  color: #2e343b;
+}
+.calculator-form__row .input select {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #2e343b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #2e343b;
+  text-align: center;
+  text-align-last: center;
+  background: transparent;
+  text-align-last: center;
+}
+.calculator-form__row--cost .name {
+  width: calc(100% - 32px);
+}
+.calculator-form__row--cost .input {
+  width: 100%;
+  margin-top: 15px;
+}
+.calculator-form__row--type {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.calculator-form__row--type .type-item {
+  display: flex;
+  width: calc(25% - 10px);
+  cursor: pointer;
+}
+.calculator-form__row--type .type-item__circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2e343b;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.calculator-form__row--type .type-item__circle:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 50%;
+  background: #2e343b;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.calculator-form__row--type .type-item__name {
+  font-size: 20px;
+  line-height: 1;
+  color: #2e343b;
+}
+.calculator-form__row--type .type-item.active .type-item__circle:before {
+  opacity: 1;
+}
+@media (max-width: 1230px) {
+  .calculator-form__row--type .type-item {
+    width: calc(50% - 15px);
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-form__row--type .type-item {
+    width: calc(25% - 10px);
+  }
+}
+@media (max-width: 550px) {
+  .calculator-form__row--type .type-item {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 550px) {
+  .calculator-form__row .name {
+    width: calc(100% - 32px);
+  }
+  .calculator-form__row .input {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+.calculator-form__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.calculator-form__button p {
+  width: 100%;
+  margin: 0 0 50px;
+  font-size: 15px;
+  text-align: center;
+  color: #2e343b;
+}
+.calculator-form__button .order-btn {
+  width: 100%;
+  max-width: 310px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  background: #ffcc00;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  padding: 10px 30px;
+}
+.calculator-form__button .order-btn:hover {
+    color: #ffcc00;
+    background-color: #333;
+}
+
+.calculator-result__title {
+  font-size: 24px;
+  color: #2e343b;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.calculator-result__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #2e343b;
+  margin-bottom: 20px;
+}
+.calculator-result__row .row-name {
+  width: calc(100% - 100px);
+}
+.calculator-result__row .row-num {
+  width: 70px;
+}
+.calculator-result__row .row-num:after {
+  content: "$";
+}
+.calculator-result__row#calculator-total {
+  font-weight: bold;
+  font-size: 24px;
+}
+.calculator-result__button {
+  display: flex;
+  justify-content: center;
+}
+.calculator-result__button .order-btn {
+  width: 100%;
+  max-width: 310px;
+  justify-content: center;
+width: 100%;
+color: white;
+display: grid;
+justify-items: center;
+align-items: center;
+height: 60px;
+  background: #ffcc00;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.calculator-result__button .order-btn:hover{
+    background-color: #333333;
+    color: #ffcc00;
+}
+</style>
