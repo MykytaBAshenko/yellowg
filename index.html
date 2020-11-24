@@ -135,42 +135,32 @@
         </div>
       </div>
 
-      <div class="reasons_for_work">
+      <div class="reasons_for_work" id="reasons_for_work">
         <div class="reasons_for_work_title">7 причин получить предложение</div>
         <div class="reasons_for_work_container">
             <div class="reasons_for_work_text">
                 <div class="reasons_for_work_text-exact">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                <br>
-                <br>
-
-                Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                <br>
-                <br>
-                Причины работы с нами:
-                <br>
-
-                - Lorem ipsum dolor sit ame<br>
-                - Lorem ipsum dolor sit ame<br>
-                - Lorem ipsum dolor sit ame<br>
-                - Lorem ipsum dolor sit ame<br>
-                - Lorem ipsum dolor sit ame
-
+                    1. Мы являемся партнером международной логистической компании Lion Trans и официальным представителем американского аукциона iaai.com в Украине. (информация на сайте iaai.com) <br><br>
+                    2. Для нас нет ничего невозможного - мы можем доставить Вам машину из США, Грузии или Кореи. <br><br>
+                    3. Мастера и собственные СТО в Киеве и Одессе помогают оптимально решить любую проблему.  <br><br>
+                    4. Когда становится вопрос про запчасти - все обращаются к нам.  <br><br>
+                    5. Мы выполняем свои обязательства точно в срок, и имеем высокий уровень экспертизы.  <br><br>
+                    6. 5 офисов в США, офисы в Украине, и логисты в Одессе и Грузии работат для Вашей поддержки.<br>  <br>
+                    7. Мы предоставляем  выгодные условия и бонусы для того, чтобы нас рекомендовали.<br><br>
                 </div> 
                 <!-- <div class="reasons_for_work_text-div">
                     <a class="reasons_for_work_text_button"  href="#">подробнее</a>
                 </div> -->
             </div>
-            <form action="#" class="reasons_for_work_form">
+            <form action="#" id="reasons_for_work_form" class="reasons_for_work_form">
                 <div class="reasons_for_work_form-title">
                     получить каталог авто с расчетом под ваш бюджет
                 </div>
                 <div class="reasons_for_work_form-control">
-                    <input placeholder="Имя" />
-                    <input placeholder="Фамилия" />
-                    <input placeholder="E-mail"/>
-                    <input placeholder="Телефон"/>
+                    <input id="catalog-input-name" placeholder="Имя" />
+                    <input id="catalog-input-secondname" placeholder="Фамилия" />
+                    <input id="catalog-input-email" placeholder="E-mail"/>
+                    <input id="catalog-input-phone" placeholder="Телефон"/>
                 </div>
                 <div class="reasons_for_work_form-social-control">
                     <div class="form-social-control-container-or">или</div>
@@ -231,11 +221,11 @@
 
 
                     </div>
-                    <button class="get-catalog">
+                    <a href="#reasons_for_work" class="get-catalog">
                         получить каталог
-                    </button>
+                    </a>
                 </div>
-                <div class="video-container">
+                <div clss="video-container">
                     <iframe  id="video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
                 </div>
       </div>
@@ -411,9 +401,9 @@
 
 				</div>
 				<div class="calculator-result__button">
-					<div class="order-btn callback__call" id="calculate-button">
+					<a href="#contacts" class="order-btn callback__call" id="calculate-button">
 						<span class="order-btn__text as_event_1">Заказать</span>
-					</div>
+                    </a>
 				</div>
 			</div>
 		</div>
@@ -574,7 +564,7 @@
         <style>
           
         </style>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="contacts-shell">
             <div class="contacts_title"> контакты</div>
 
@@ -583,18 +573,18 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d272.14131210508003!2d30.61330668959331!3d50.40176518595656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5bafa84d223%3A0x3b3060d176daa730!2z0JTQvdC10L_RgNC-0LLRgdC60LDRjyDQvdCw0LHQtdGA0LXQttC90LDRjywgMTQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1605784315758!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="contacts-container-form">
-                    <form action="#">
+                    <form id="contacts-container-form" >
                         <div class="contacts-container-form-row">
-                            <input placeholder="Ваше имя" class="contacts-container-form-input"/>
-                            <input placeholder="Телефон" class="contacts-container-form-input"/> 
-                            <input placeholder="Город" class="contacts-container-form-input"/>
-                            <input placeholder="Бюджет" class="contacts-container-form-input"/> 
+                            <input id="name_contacts-input" name="name" placeholder="Ваше имя" class="contacts-container-form-input"/>
+                            <input id="phone_contacts-input" name="phone" placeholder="Телефон" class="contacts-container-form-input"/> 
+                            <input id="city_contacts-input" name="city" placeholder="Город" class="contacts-container-form-input"/>
+                            <input id="budget_contacts-input" name="budget" placeholder="Бюджет" class="contacts-container-form-input"/> 
                         </div>
                         <div class="contacts-container-form-row-textarea">
-                            <textarea placeholder="Сообщение" class="contacts-container-form-textarea"></textarea>
+                            <textarea id="message_contacts-input" name="message" placeholder="Сообщение" class="contacts-container-form-textarea"></textarea>
                         </div>
                         <div class="contacts-container-form-row-btn">
-                            <button type="submit">отправить</button>
+                            <button id="contacts-container-form-btn" type="submit">отправить</button>
                         </div>
                     </form>
                     <div class="contacts-container-form-social">
@@ -901,6 +891,89 @@
 		    }
 		]
 	});
+
+
+                    
+        $('#reasons_for_work_form').submit(function(e){
+        e.preventDefault()
+            let countError = 0;
+			contactName = $('#catalog-input-name');
+			contactSecondName = $('#catalog-input-secondname');
+			contactEmail = $('#catalog-input-email');
+
+			contactPhone = $('#catalog-input-phone');
+
+    	var data_json = {
+            		"фамилия": contactSecondName.val(),
+					"email": contactEmail.val(),
+					"Для чего": "получить каталог && начать работать",
+
+    		
+    	}
+        
+    		$.ajax({
+				url: '/post_contact.php',
+				type: 'post',
+				data: {
+					subject: 'Форма заявки для получения каталога',
+					name: contactName.val(),
+					phone: contactPhone.val(),
+					data_json: JSON.stringify(data_json)
+				},
+				success: function() {
+					$('#reasons_for_work_form input').val('')
+
+					$('.success').fadeIn(200)
+
+					setTimeout(function(){
+						$('.success').fadeOut(200)
+					}, 3000)
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+					console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+				}
+           });
+    	})
+
+    $('#contacts-container-form').submit(function(e){
+        e.preventDefault()
+            let countError = 0;
+			contactName = $('#name_contacts-input');
+			contactPhone = $('#phone_contacts-input');
+
+    	var data_json = {
+    		"Город":  $('#city_contacts-input').val(),
+    		"Бюджет":  $('#budget_contacts-input').val(),
+    		"Сообщение":  $('#message_contacts-input').val(),
+					"Для чего": "получить обратную связь",
+
+    	}
+
+    	if (!countError) {
+    		$.ajax({
+				url: '/post_contact.php',
+				type: 'post',
+				data: {
+					subject: 'Форма заявки',
+					name: contactName.val(),
+					phone: contactPhone.val(),
+					data_json: JSON.stringify(data_json)
+				},
+				success: function() {
+					$('#contacts-container-form input, textarea').val('')
+
+					$('.success').fadeIn(200)
+
+					setTimeout(function(){
+						$('.success').fadeOut(200)
+					}, 3000)
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+					console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+				}
+           });
+    	}	
+	})
 
 
 </script>

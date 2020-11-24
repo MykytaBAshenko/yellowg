@@ -375,7 +375,6 @@ text-align: center;
   .form-social-control-container-or{
       text-align:center;
       padding: 25px 0 15px;
-      transform: translate(16px, 0);
       font-weight: 800;
       letter-spacing: 2px;
   }
@@ -394,7 +393,9 @@ text-align: center;
     background-color: #ffcc00;
     width: 270px;
     height: 50px;
-
+    display: grid;
+    align-items: center;
+    justify-items: center;
     justify-self: start;
     align-self: end;
 }
@@ -499,7 +500,7 @@ text-align: center;
     display: grid;
     width: 100%;
     max-width: 510px;
-    padding: 0 15px 0 45px;
+    padding: 0 15px 0 15px;
     grid-template-columns: 1fr 1fr;
     column-gap: 70px;
 }
@@ -548,7 +549,7 @@ text-align: center;
     background:#ebebeb;
     text-transform: uppercase;
     margin-left: 80px;
-    padding: 45px 65px 30px 25px;
+    padding: 45px 25px 30px 25px;
 }
 .reasons_for_work_form-title{
     font-size: 22px;
@@ -1010,16 +1011,13 @@ iframe{
    
       }
       .contacts-container-form-social{
-          align-self: end;
           transform: translate(0,-2px);
       }
 
 
-      @media (max-width: 1400px) {
 
       .contacts-container-form{
   grid-template-rows: none;
-}
 }
 
 
