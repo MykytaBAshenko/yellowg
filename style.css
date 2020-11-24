@@ -1577,3 +1577,12 @@ html, body {
 .btn-fb .fb-content p {
 	color: rgba(255, 255, 255, 0.87);
 }
+
+.contacts-section-info{
+  display: grid;
+  justify-items: center;
+}
+.contacts-section-info-shell{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
