@@ -856,7 +856,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
             </div>            
         </div>
         <style>
-         
+        @media(max-width: 1100px){
+        .news-blog{
+             padding: 20px 35px;
+         }
+         .news-blog-title{
+             font-size: 16px;
+             text-align: center;
+             font-weight: bold;
+             padding-bottom: 10px;
+         }
+         .news-blog-block{
+            font-size: 12px;
+         }
+         .news-blog-map {
+             column-gap: 20px;
+             row-gap: 15px;
+         }
+         .news-blog-block{
+             text-align: justify;
+             text-transform: none;
+         }
+        }
+        @media(max-width: 750px){
+         .news-blog-map {
+            grid-template-columns: 1fr 1fr;
+        }
+        }
         </style>
         <div class="news-blog">
             <div class="news-blog-shell">
@@ -885,7 +911,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 </div>
             </div>
         </div>
-        
+        <style>
+            @media (max-width: 1100px){
+            .call-to-us-text-second{
+                font-size: 12px;
+                font-weight: normal;
+            }
+            .call-to-us-text-title{
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .call-to-us-btn-cont a{
+                font-size: 12px;
+                width: 132px;
+                height: 30px;
+            }
+            .call-to-us-btn-cont a i{
+                font-size: 16px;
+                transform: translate(-10px,1px);
+            }
+            .call-to-us-btn-cont a span{
+                transform: translate(8px, 0);
+            }
+        }
+        </style>
         <div class="call-to-us">
             <div class="call-to-us-shell">
                 <div class="call-to-us-text">
@@ -906,13 +955,62 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 </div>
             </div>
         </div>
+        <style>
+          
+        .partners-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .partners-list img{
+            max-width: 14%;
+        }
+        @media(max-width:1100px){
+            .partners{
+                padding: 20px 35px 30px;
+            }
+            .partners-list img{
+            width: 33%;
+            max-width: 110px;
+            }
+            .partners-title {
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            #delete-img{
+                display: none;
+            }
+        }
+        @media(max-width:740px){
+         
+            .partners-list img{
+           margin-top: 10px;
+            max-width: 26%;
+            }
+   
+        }
+        </style>
         <div class="partners">
         <div class="partners-shell">
 
             <div class="partners-title">
                 <span>Наши партнеры</span>
             </div>
-            <div class="container">
+            <div class="partners-list">
+               
+                        <img src="images/partners/partner1.png" alt="">               
+                        <img src="images/partners/partner7.jpg" alt="">               
+                        <img id="delete-img" src="images/partners/partner2.png" alt="">               
+                        <img src="images/partners/partner3.png" alt="">               
+                        <img src="images/partners/partner4.png" alt="">               
+                        <img src="images/partners/partner5.png" alt="">               
+                        <img src="images/partners/partner6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container">
                 <div class="partner-items">
                     <div class="partner-item">
                         <div class="partner-item__container">
@@ -951,7 +1049,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     </div>
                     
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     
@@ -1012,16 +1110,56 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
             .evryday-content-title{
                 font-weight: bold;
+                max-width: 100%;
+            }
+           
+        }
+        @media (max-width: 1100px){
+          
+            .evryday {
+                padding: 20px 40px;
+            }
+          .evryday-photo{
+            display: none;
+            }
+            .evryday-shell{
+                grid-template-columns: 1fr;
+            }
+            .evryday-shell > *{
+                max-width: 100%;
+                width: 100%;
+            }
+            .evryday-content-title{
                 font-size: 14px;
+                font-weight: bold;
                 max-width: 100%;
             }
             .evryday-content-text1{
                 font-size: 12px;
+                padding-top: 20px;
             }
 
             .evryday-content-text2{
                 font-size: 12px;
+                padding-top: 20px;
+            }
+            .evryday-content-btns{
+                padding-top: 20px;
+            }
+            .evryday-content-btns a{
+                font-size: 14px;
+                padding: 5px 7px;
+                justify-items: center;
+                align-items: center;
+                display: grid;
+                height: 30px;
+                width: 130px;
+                cursor: pointer;
+            }
 
+            .evryday-content-btns a svg {
+                width: 20px;
+                height: 20px;
             }
         }
         </style>
