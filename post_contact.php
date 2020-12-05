@@ -19,6 +19,6 @@
         if ($value) {
             $message .= $key . ':' . $value . "\n";
         }
-    }
+    } 
 
     mail($to, $subject, $message, $headers); 
