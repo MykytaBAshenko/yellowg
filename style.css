@@ -502,8 +502,8 @@ text-align: center;
     display: grid;
 }
 .video-container iframe{
-    height: 370px;
     width: 100%;
+    height: 580px;
 }
 .cars-posts{
     display: grid;
@@ -959,10 +959,7 @@ footer{
 }
 
 
-iframe{
-  height: 580px;
-  width: 100%;
-}
+
 .contacts-container-map{
 
 }
