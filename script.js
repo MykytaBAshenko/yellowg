@@ -48,6 +48,90 @@
 		}
 	})
 
+
+
+
+	$('.calculator-form-mobile-btn button').click(function(){
+		let calc = $('.calculator-form-mob');
+			price = calc.find('input[name="calculator_cost-mob"]').val();
+			type = $('.calculator-form__row--type .type-item.active').data('index')
+			year = calc.find('[name="calculator_year-mob"] :selected').text();
+			volume = calc.find('input[name="calculator_turbo-mob"]').val();
+			type_tax = 0;
+			volume_tax = 0;
+			age_tax = 0;
+			console.log(price, calc, type,year,volume)
+		
+		if (!price) {
+			price = 0;
+		}
+
+		if (!volume) {
+			volume = 0;
+		}
+		// тип двигателя
+		if (type == 2) {
+			type_tax = 75;
+		} else {
+			type_tax = 50;
+		}
+
+		// объем двигателя
+		volume_tax = volume * 0.001;
+
+		if (volume_tax > 3) {
+			if (type == 2) {
+				type_tax = 150;
+			} else {
+				type_tax = 100;
+			}
+		}
+
+		// коэф. возраста
+		if (2020 - year - 1 > 15) {
+			age_tax = 15;
+		} else if (2020 - year - 1 < 1) {
+			age_tax = 1;
+		} else {
+			age_tax = 2020 - year - 1;
+		}
+
+		
+		let services = 650;
+			port = 350;
+			dellivery = 850;
+			customs_duty = price * 0.1;
+			customs_tax = type_tax * volume_tax * age_tax;
+			customs_all_tax = parseInt(customs_duty + customs_tax);
+			customs_vat = parseInt(price * 0.2 + customs_all_tax * 0.2)
+			customs = parseInt(customs_all_tax + customs_vat);
+			total = Number(price) + Number(services) + Number(port) + Number(dellivery) + Number(customs);
+
+		console.log(customs_duty)
+		console.log(customs_tax)
+		console.log(customs_all_tax)
+		console.log(customs_vat)
+		console.log(customs)
+		console.log(total)
+
+		// $('#calculator-price .row-num').text(price)
+		// // $('#calculator-sbor .row-num').text()
+		// $('#calculator-service .row-num').text(services)
+		// // $('#calculator-strahovka .row-num').text()
+		// $('#calculator-port .row-num').text(port)
+		// $('#calculator-dellivery .row-num').text(dellivery)
+		// $('#calculator-customs .row-num').text(customs)
+		// $('#calculator-total .row-num').text(total)
+	})
+
+
+
+
+
+
+
+
+
 	$('.calculator-form .order-btn').click(function(){
 		let calc = $('.calculator-form');
 			price = calc.find('input[name="calculator_cost"]').val();
@@ -383,4 +467,44 @@
            });
     	}	
 	})
+
+	$('#footer-mobile-form-mobile').submit(function(e){
+		e.preventDefault()
+				let countError = 0;
+	contactName = $('#name_contacts-input-mobile');
+	contactPhone = $('#phone_contacts-input-mobile');
+
+	var data_json = {
+		"Город":  $('#city_contacts-input-mobile').val(),
+		"Бюджет":  $('#budget_contacts-input-mobile').val(),
+		"Сообщение":  $('#message_contacts-input-mobile').val(),
+	"Цель": "получить обратную связь",
+
+	}
+
+	if (!countError) {
+		$.ajax({
+		url: '/post_contact.php',
+		type: 'post',
+		data: {
+			subject: 'Форма заявки',
+			name: contactName.val(),
+			phone: contactPhone.val(),
+			data_json: JSON.stringify(data_json)
+		},
+		success: function() {
+			$('#footer-mobile-form-mobile input, textarea').val('')
+
+			$('.success').fadeIn(200)
+
+			setTimeout(function(){
+				$('.success').fadeOut(200)
+			}, 3000)
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+			 });
+	}	
+})
 

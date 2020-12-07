@@ -1068,14 +1068,14 @@ font-size: 8px;
           
         }
         </style>
-    <div class="calculator-mobile">
+    <div class="calculator-mobile-mob">
         <div class="calculator-mobile-shell">
             <div class="calculator-mobile-title">расчет авто из сша под ключ</div>
             <div class="calculator-mobile-control">
                 <div class="calculator-form__row--cost">
                     <div class="name">Стоимость на аукционе, $</div>
                     <div class="input">
-                        <input type="text" name="calculator_cost">
+                        <input type="text" name="calculator_cost-mob">
                     </div>
                 </div>
                 <div class="calculator-form__row--type">
@@ -1099,7 +1099,7 @@ font-size: 8px;
                 <div class="calculator-form__row--year">
                     <div class="name">Год выпуска</div>
                     <div class="input">
-                        <select class="calculator_year" name="calculator_year">
+                        <select class="calculator_year" name="calculator_year-mob">
                             <option value="1995">1995</option>
                             <option value="1996">1996</option>
                             <option value="1997">1997</option>
@@ -1132,7 +1132,7 @@ font-size: 8px;
                     <div class="name">Объем двигателя, см3</div>
                     <div class="name name__electro">Объем АКБ, кВт/час</div>
                     <div class="input">
-                        <input type="text" name="calculator_turbo">
+                        <input type="text" name="calculator_turbo-mob">
                     </div>
                 </div>
             </div>     
@@ -1155,6 +1155,7 @@ font-size: 8px;
             position: fixed;
             top:0;
             left: 0;
+            z-index: 200;
             background-color: rgba(45, 52, 58, 0.4);
         }
         .calculator-mobile-result-shell{
@@ -1225,10 +1226,12 @@ font-size: 8px;
             row-gap: 20px;
             padding-bottom: 30px;
         }
+       
         .calculator-mobile-result-control-close{
             border: 1px solid #ffcc00;
             background-color: #ffcc00;
             color: #2D343A;
+            font-weight: bold;
             text-transform: uppercase;
             font-size: 12px;
             max-width: 200px;
@@ -1239,6 +1242,8 @@ font-size: 8px;
             border: 1px solid #2D343A;
             background-color: #2D343A;
             color: white;
+            font-weight: bold;
+
             text-transform: uppercase;
             font-size: 12px;
             max-width: 200px;
@@ -1246,8 +1251,11 @@ font-size: 8px;
             height: 30px;
 
         }
+        .calculator-mobile-result-none{
+            display: none;
+        }
     </style>
-    <div class="calculator-mobile-result">
+    <div class="calculator-mobile-result  calculator-mobile-result-none">
         <div class="calculator-mobile-result-shell">
             <div class="calculator-mobile-result-title">
                 <div class="calculator-mobile-result-title-exact">результаты рассчета</div>
@@ -1263,55 +1271,55 @@ font-size: 8px;
                         Цена лота на аукционе
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $0
                     </div>
                 </div>
                 <div class="calculator-mobile-result-list-row">
                     <div class="calculator-mobile-result-list-row-name">
-                        Цена лота на аукционе
+                        Сбор аукциона
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $0
                     </div>
                 </div>       
                 <div class="calculator-mobile-result-list-row">
                     <div class="calculator-mobile-result-list-row-name">
-                        Цена лота на аукционе
+                        Наши услуги
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $650
                     </div>
                 </div>       
                 <div class="calculator-mobile-result-list-row">
                     <div class="calculator-mobile-result-list-row-name">
-                        Цена лота на аукционе
+                        Страховка
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $0
                     </div>
                 </div>       
                 <div class="calculator-mobile-result-list-row">
                     <div class="calculator-mobile-result-list-row-name">
-                        Цена лота на аукционе
+                        Доставка машины до места отправки
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $350
                     </div>
                 </div>       
                 <div class="calculator-mobile-result-list-row">
                     <div class="calculator-mobile-result-list-row-name">
-                        Цена лота на аукционе
+                        Доставка в Украину
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $850
                     </div>
                 </div>       
                 <div class="calculator-mobile-result-list-row">
                     <div class="calculator-mobile-result-list-row-name">
-                        Цена лота на аукционе
+                        Таможенные платежы
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $0
                     </div>
                 </div>       
                 <div class="calculator-mobile-result-list-row calculator-mobile-result-list-row-final">
@@ -1319,7 +1327,7 @@ font-size: 8px;
                         всего
                     </div>
                     <div class="calculator-mobile-result-list-row-cost">
-                        $5000
+                        $1250
                     </div>
                 </div>                        
             </div>
@@ -1445,7 +1453,7 @@ font-size: 8px;
 			</div>
 			<div class="calculator-result">
 				<div class="calculator-result__data">
-					<div class="calculator-result__title">РЕЗУЛЬТАТЫ РАСЧЁТА</div>
+					<div class="calculator-result__title">РЕЗУЛЬТАТЫ РАССЧЁТА</div>
 					<div class="calculator-result__row" id="calculator-price">
 						<div class="row-name">Цена лота на аукционе</div>
 						<div class="row-num">0</div>
@@ -1998,16 +2006,16 @@ font-size: 8px;
             
         </style>
         <div class="footer-mobile">
-                <form id="footer-mobile-form" >
+                <form id="footer-mobile-form-mobile" >
                     <div class="footer-mobile-form-title">оставить заявку</div>
                     <div class="footer-mobile-form-row">
-                        <input id="name_contacts-input" name="name" placeholder="Ваше имя" class="footer-mobile-form-input"/>
-                        <input id="phone_contacts-input" name="phone" placeholder="Телефон" class="footer-mobile-form-input"/> 
-                        <input id="city_contacts-input" name="city" placeholder="Город" class="footer-mobile-form-input"/>
-                        <input id="budget_contacts-input" name="budget" placeholder="Бюджет" class="footer-mobile-form-input"/> 
+                        <input id="name_contacts-input-mobile" name="name" placeholder="Ваше имя" class="footer-mobile-form-input"/>
+                        <input id="phone_contacts-input-mobile" name="phone" placeholder="Телефон" class="footer-mobile-form-input"/> 
+                        <input id="city_contacts-input-mobile" name="city" placeholder="Город" class="footer-mobile-form-input"/>
+                        <input id="budget_contacts-input-mobile" name="budget" placeholder="Бюджет" class="footer-mobile-form-input"/> 
                     </div>
                     <div class="footer-mobile-form-row-textarea">
-                        <textarea id="message_contacts-input" name="message" placeholder="Сообщение" class="footer-mobile-form-textarea"></textarea>
+                        <textarea id="message_contacts-input-mobile" name="message" placeholder="Сообщение" class="footer-mobile-form-textarea"></textarea>
                     </div>
                     <div class="footer-mobile-form-row-btn">
                         <button id="footer-mobile-form-btn" type="submit">отправить</button>
