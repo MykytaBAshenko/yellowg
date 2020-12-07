@@ -216,6 +216,48 @@
 	});
 
 
+	$('#reasons_for_work_form-flat').submit(function(e){
+		e.preventDefault()
+				let countError = 0;
+	contactName = $('#catalog-input-name-flat');
+	contactSecondName = $('#catalog-input-secondname-flat');
+	contactEmail = $('#catalog-input-email-flat');
+
+	contactPhone = $('#catalog-input-phone-flat');
+
+	var data_json = {
+						"фамилия": contactSecondName.val(),
+			"email": contactEmail.val(),
+			"Цель": "получить каталог && начать работать",
+
+		
+	}
+		
+		$.ajax({
+		url: '/post_contact.php',
+		type: 'post',
+		data: {
+			subject: 'Форма заявки для получения каталога',
+			name: contactName.val(),
+			phone: contactPhone.val(),
+			data_json: JSON.stringify(data_json)
+		},
+		success: function() {
+			$('#reasons_for_work_form input').val('')
+
+			$('.success').fadeIn(200)
+
+			setTimeout(function(){
+				$('.success').fadeOut(200)
+			}, 3000)
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+			 });
+	})
+
+
                     
         $('#reasons_for_work_form').submit(function(e){
         e.preventDefault()

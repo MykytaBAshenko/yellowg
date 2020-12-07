@@ -1191,6 +1191,8 @@ max-width: 1280px;
 }
 .calculator-form__row .icon {
   width: 22px;
+  padding-right: 30px;
+
 }
 .calculator-form__row .icon img {
   filter: brightness(0);
