@@ -1145,6 +1145,195 @@ font-size: 8px;
             </div>       
         </div>
     </div>
+    <style>
+        .calculator-mobile-result{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top:0;
+            left: 0;
+            background-color: rgba(45, 52, 58, 0.4);
+        }
+        .calculator-mobile-result-shell{
+            background-color: white;
+            border: 1px solid #2D343A;
+            color: #2D343A;
+            display: grid;
+            
+            width: 100%;
+            max-width: 500px;
+        }
+        .calculator-mobile-result-title{
+            display: grid;
+            position: relative;
+            color: white;
+            text-transform: uppercase;
+            padding: 8px 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            background: #5A5A5A;
+            grid-template-columns: 1fr;
+        }
+        .calculator-mobile-result-title-close{
+            position: absolute;
+            right: 0;
+            margin: 4px 10px;
+        }
+        .calculator-mobile-result-title-close button{
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: transparent;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            padding: 5px;
+        }
+        .calculator-mobile-result-title-close svg{
+            width: 13px;
+            height: 13px;
+            fill: white;
+        }
+        .calculator-mobile-result-list-row{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+        }
+        .calculator-mobile-result-list{
+            padding: 20px 45px 20px 33px;
+            display: grid;
+            row-gap: 20px;
+        }
+        .calculator-mobile-result-list-row-name{
+            font-weight: bold;
+            font-size: 10px;
+        }
+        .calculator-mobile-result-list-row-final 
+        .calculator-mobile-result-list-row-name {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .calculator-mobile-result-list-row-cost{
+            font-size: 10px;
+        }
+        .calculator-mobile-result-control{
+            display: grid;
+            justify-items: center;
+            row-gap: 20px;
+            padding-bottom: 30px;
+        }
+        .calculator-mobile-result-control-close{
+            border: 1px solid #ffcc00;
+            background-color: #ffcc00;
+            color: #2D343A;
+            text-transform: uppercase;
+            font-size: 12px;
+            max-width: 200px;
+            height: 30px;
+            width: 100%;
+        }
+        .calculator-mobile-result-control-open-zaiava{
+            border: 1px solid #2D343A;
+            background-color: #2D343A;
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+            max-width: 200px;
+            width: 100%;
+            height: 30px;
+
+        }
+    </style>
+    <div class="calculator-mobile-result">
+        <div class="calculator-mobile-result-shell">
+            <div class="calculator-mobile-result-title">
+                <div class="calculator-mobile-result-title-exact">результаты рассчета</div>
+                <div class="calculator-mobile-result-title-close">
+                    <button>
+                        <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="calculator-mobile-result-list">
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>       
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>       
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>       
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>       
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>       
+                <div class="calculator-mobile-result-list-row">
+                    <div class="calculator-mobile-result-list-row-name">
+                        Цена лота на аукционе
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>       
+                <div class="calculator-mobile-result-list-row calculator-mobile-result-list-row-final">
+                    <div class="calculator-mobile-result-list-row-name">
+                        всего
+                    </div>
+                    <div class="calculator-mobile-result-list-row-cost">
+                        $5000
+                    </div>
+                </div>                        
+            </div>
+            <div class="calculator-mobile-result-control">
+                <button class="calculator-mobile-result-control-close">
+                    рассчитать другое авто
+                </button> 
+                <button class="calculator-mobile-result-control-open-zaiava">
+                    оставить заявку
+                </button> 
+                               
+            </div>
+        </div>
+    </div>
 <style>
     .calculator-form-mobile-btn-text{
         padding-top: 15px;
