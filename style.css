@@ -2853,3 +2853,14 @@ fill: #5A5A5A;
                 }
                 }
                 
+                @media(max-width: 800px){
+                  .call-to-us-shell{
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                    row-gap: 20px;
+                    justify-items: center;
+                  }
+                  .call-to-us{
+                    padding: 20px 33px;
+                  }
+                }
