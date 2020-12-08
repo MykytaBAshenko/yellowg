@@ -2864,3 +2864,89 @@ fill: #5A5A5A;
                     padding: 20px 33px;
                   }
                 }
+
+                .blog-map-eaxct{
+                  display: grid;
+                  width: 100%;
+                  justify-items: center;
+                }
+                .blog-map-row{
+                  display: grid;
+                  width: 100%;
+                  grid-template-columns: 140px 1fr;
+                  column-gap: 15px;
+        
+                }
+                .blog-map{
+                  display: grid;
+                  justify-items: center;
+                }
+                .blog-map-image{
+                        position: relative;
+                  height: 140px;
+                  background: #fc0;
+                  overflow: hidden;
+                }
+                .blog-map-image img{
+                  position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            transform: translate(-50%,-50%);
+                }
+                .blog-map-shell{
+                  display: grid;
+                  padding: 300px 45px 60px;
+                  justify-items: center;
+                }
+                .blog-map-shell{
+                  max-width: 1280px;
+                  
+                }
+                .blog-map-main-title{
+                  font-size:30px;
+                  color: #2e343b;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  padding-bottom: 30px;
+                }
+                .blog-map-title{
+                  font-size: 24px;
+                  color: #2e343b;
+                  font-weight: bold;
+                }
+                .blog-map-content{
+                }
+                .blog-map-title:hover{
+                text-decoration: underline;
+                }
+                .blog-map-main-text{
+                  margin-top: 10px;
+        
+                  font-size: 18px;
+                }
+                @media(max-width: 1100px){
+                  .blog-map-shell{
+                    padding: 60px 33px 20px;
+                  }
+                  .blog-map-row{
+                    grid-template-columns: 80px 1fr;
+                  }
+                .blog-map-image{
+                        position: relative;
+                  height: 80px;
+                  background: #fc0;
+                  overflow: hidden;
+                }
+                .blog-map-main-text{
+                  font-size: 12px;
+                }
+                .blog-map-title{
+                  font-size: 12px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                }
+                .blog-map-shell{
+                  width: 100%;
+                }
+                }
