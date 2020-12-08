@@ -52,7 +52,7 @@
 
 
 	$('.calculator-form-mobile-btn button').click(function(){
-		let calc = $('.calculator-form-mob');
+		let calc = $('.calculator-mobile-shell');
 			price = calc.find('input[name="calculator_cost-mob"]').val();
 			type = $('.calculator-form__row--type .type-item.active').data('index')
 			year = calc.find('[name="calculator_year-mob"] :selected').text();
@@ -60,7 +60,6 @@
 			type_tax = 0;
 			volume_tax = 0;
 			age_tax = 0;
-			console.log(price, calc, type,year,volume)
 		
 		if (!price) {
 			price = 0;
@@ -113,15 +112,16 @@
 		console.log(customs_vat)
 		console.log(customs)
 		console.log(total)
-
-		// $('#calculator-price .row-num').text(price)
+		console.log(document.getElementById("calculator-mobile-result"))
+	document.getElementById("calculator-mobile-result").className = "calculator-mobile-result"
+		$('#calculator-price-mob ').text("$"+price)
 		// // $('#calculator-sbor .row-num').text()
 		// $('#calculator-service .row-num').text(services)
 		// // $('#calculator-strahovka .row-num').text()
 		// $('#calculator-port .row-num').text(port)
 		// $('#calculator-dellivery .row-num').text(dellivery)
-		// $('#calculator-customs .row-num').text(customs)
-		// $('#calculator-total .row-num').text(total)
+		$('#calculator-customs-mob').text("$"+customs)
+		$('#calculator-total-mob').text("$"+total)
 	})
 
 
@@ -130,8 +130,18 @@
 
 
 
-
-
+	$('.calculator-mobile-result-title-close button').click(function(){
+		document.getElementById("calculator-mobile-result").className = "calculator-mobile-result  calculator-mobile-result-none"
+	})
+	$(".calculator-mobile-result-control-close").click(function(){
+		document.getElementById("calculator-mobile-result").className = "calculator-mobile-result  calculator-mobile-result-none"
+		
+	})
+	// calculator-mobile-result-control-open-zaiava
+	$(".calculator-mobile-result-control-open-zaiava").click(function(){
+		document.getElementById("calculator-mobile-result").className = "calculator-mobile-result  calculator-mobile-result-none"
+		
+	})
 	$('.calculator-form .order-btn').click(function(){
 		let calc = $('.calculator-form');
 			price = calc.find('input[name="calculator_cost"]').val();
@@ -328,7 +338,9 @@
 			data_json: JSON.stringify(data_json)
 		},
 		success: function() {
-			$('#reasons_for_work_form input').val('')
+			$('#reasons_for_work_form-flat input').val('')
+			$('.get_catalog_from_vigoda').addClass("get_catalog_from_vigoda_none")
+
 
 			$('.success').fadeIn(200)
 
@@ -340,7 +352,13 @@
 			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
 		}
 			 });
+			 $('#reasons_for_work_form-flat input').val('')
+			 $('.get_catalog_from_vigoda').addClass("get_catalog_from_vigoda_none")
 	})
+
+
+
+
 
 
 
@@ -371,7 +389,7 @@
 			data_json: JSON.stringify(data_json)
 		},
 		success: function() {
-			$('#reasons_for_work_form input').val('')
+			$('#reasons_for_work_form-flat input').val('')
 
 			$('.success').fadeIn(200)
 
@@ -383,6 +401,9 @@
 			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
 		}
 			 });
+			$('#reasons_for_work_form-flat input').val('')
+			$('.get_catalog_from_vigoda').addClass("get_catalog_from_vigoda_none")
+
 	})
 
 
@@ -508,3 +529,147 @@
 	}	
 })
 
+let mobile_btn = document.getElementById("mobile-control-btn")
+let mobile_menu = document.getElementById("mobile-menu")
+mobile_btn.onclick = function myFunction() {
+if (mobile_menu.className === "mobile-navbar-list mobile-menu-none") {
+mobile_menu.className = "mobile-navbar-list";
+} else {
+mobile_menu.className = "mobile-navbar-list mobile-menu-none";
+}
+}
+
+
+let btn_get_cat_1 = document.getElementById("btn-video-get-catalog1")
+let btn_get_cat_2 = document.getElementById("btn-video-get-catalog2")
+let form_onclick = document.getElementById("form_onclick")
+let  close_vigoda_form
+if(btn_get_cat_1)
+btn_get_cat_1.onclick = function(){
+		form_onclick.className = "get_catalog_from_vigoda"
+		close_vigoda_form = document.getElementById("close_vigoda_form")
+		close_vigoda_form.onclick = function() {
+		form_onclick.className = "get_catalog_from_vigoda get_catalog_from_vigoda_none"
+
+		}
+};
+if(btn_get_cat_2)
+
+btn_get_cat_2.onclick = function(){
+		form_onclick.className = "get_catalog_from_vigoda"
+		close_vigoda_form = document.getElementById("close_vigoda_form")
+		close_vigoda_form.onclick = function() {
+		form_onclick.className = "get_catalog_from_vigoda get_catalog_from_vigoda_none"
+
+		}
+};
+
+
+let videodivm = document.getElementById("video-iframe-m") 
+let m_ctrl1 = document.getElementById("ctrl-mobile-btn1")
+let m_ctrl2 = document.getElementById("ctrl-mobile-btn2")
+let m_ctrl3 = document.getElementById("ctrl-mobile-btn3")
+let m_ctrl4 = document.getElementById("ctrl-mobile-btn4")
+let m_ctrl5 = document.getElementById("ctrl-mobile-btn5")
+let mbtns = document.getElementsByClassName("btn-video-mobile-ctr")
+
+
+let videodiv = document.getElementById("video-iframe") 
+let ctrl1 = document.getElementById("ctrl-btn1")
+let ctrl2 = document.getElementById("ctrl-btn2")
+let ctrl3 = document.getElementById("ctrl-btn3")
+let ctrl4 = document.getElementById("ctrl-btn4")
+let ctrl5 = document.getElementById("ctrl-btn5")
+let btns = document.getElementsByClassName("btn-video-ctr")
+//   let 
+let arr_v = [
+  "https://www.youtube.com/embed/5gYoUm3wLHI",
+  "https://www.youtube.com/embed/FwUsIr5OHFE",
+  "https://www.youtube.com/embed/uhNHX5fbnkg",
+  "https://www.youtube.com/embed/FwUsIr5OHFE",
+  "https://www.youtube.com/embed/uhNHX5fbnkg"
+]
+if(videodivm)
+function video_mobile_c(n){
+  for(let yy = 0; yy < mbtns.length; yy++){
+    mbtns[yy].className = "btn-video-mobile-ctr"
+  }
+  if(n == 1){
+      videodivm.src = arr_v[n-1]
+      m_ctrl1.className += " active"
+  }
+  if(n == 2){
+      videodivm.src = arr_v[n-1]
+      m_ctrl2.className += " active"
+  }
+  if(n == 3){
+      videodivm.src = arr_v[n-1]
+      m_ctrl3.className += " active"
+  }
+  if(n == 4){
+      videodivm.src = arr_v[n-1]
+      m_ctrl4.className += " active"
+  }
+  if(n == 5){
+      videodivm.src = arr_v[n-1]
+      m_ctrl5.className += " active"
+  }
+}
+if(videodiv)
+function video_c(n){
+  for(let yy = 0; yy < btns.length; yy++){
+      btns[yy].className = "btn-video-ctr"
+  }
+  if(n == 1){
+      videodiv.src = arr_v[n-1]
+      ctrl1.className += " active"
+  }
+  if(n == 2){
+      videodiv.src = arr_v[n-1]
+      ctrl2.className += " active"
+  }
+  if(n == 3){
+      videodiv.src = arr_v[n-1]
+      ctrl3.className += " active"
+  }
+  if(n == 4){
+      videodiv.src = arr_v[n-1]
+      ctrl4.className += " active"
+  }
+  if(n == 5){
+      videodiv.src = arr_v[n-1]
+      ctrl5.className += " active"
+  }
+}
+document.addEventListener("DOMContentLoaded", function(event) {
+	if(video_c)
+	video_c(1)
+	if(video_mobile_c)
+
+  video_mobile_c(1)
+});
+
+
+
+let cal_b_1 = document.getElementById("calculate-button")
+let form_onclick2 = document.getElementById("form_onclick2")
+let  close_vigoda_form2
+if(cal_b_1)
+cal_b_1.onclick = function(){
+		form_onclick2.className = "get_catalog_from_vigoda"
+		close_vigoda_form2 = document.getElementById("close_vigoda_form2")
+		close_vigoda_form2.onclick = function() {
+		form_onclick2.className = "get_catalog_from_vigoda get_catalog_from_vigoda_none"
+		}
+};
+
+calculator_form_mobile_btn = document.getElementById("calculator-form-mobile-btn")
+if(calculator_form_mobile_btn)
+calculator_form_mobile_btn.onclick = function(){
+
+		form_onclick2.className = "get_catalog_from_vigoda"
+		close_vigoda_form2 = document.getElementById("close_vigoda_form2")
+		close_vigoda_form2.onclick = function() {
+		form_onclick2.className = "get_catalog_from_vigoda get_catalog_from_vigoda_none"
+		}
+};
