@@ -6,6 +6,9 @@
   box-sizing:border-box;
   text-decoration: none;
 }
+body{
+  color: #2d342d;
+}
 ul{
   list-style: none;
 }
@@ -2856,12 +2859,11 @@ fill: #5A5A5A;
                 
                 @media(max-width: 800px){
                   .call-to-us-shell{
-                    text-align: center;
                     row-gap: 20px;
-                    justify-items: center;
                   }
                   .call-to-us{
-                    padding: 20px 33px;
+                    row-gap: 10px;
+                    padding: 20px 15px;
                   }
                 }
 
@@ -3230,7 +3232,7 @@ fill: #5A5A5A;
           text-transform: uppercase;
           letter-spacing: 2.85px;
           padding-bottom:40px;
-          text-align: center;
+          text-align:left;
           }
           .posts-on-this-theme-map{
             width: 100%;
@@ -3249,6 +3251,7 @@ fill: #5A5A5A;
           .posts-on-this-theme-title{
           font-size: 14px;
           padding-bottom: 0px;
+          text-align: center;
           }
           .posts-on-this-theme-map a{
             font-size: 12px;
@@ -3269,3 +3272,86 @@ fill: #5A5A5A;
           width: calc(50% - 10px);
           }
           }
+
+          
+    .registration-mobile{
+      display: none;
+    }
+
+    .registration-pc{
+      padding: 300px 45px 40px;
+      display: grid;
+      justify-items: center;
+
+    }
+    .registration-pc-shell{
+      width: 100%;
+      max-width: 1280px;
+    }
+    .registration-pc-title{
+      color: #2E343B;
+      text-align: left;
+      text-transform: uppercase;
+      width: 100%;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2.85px;
+  padding-bottom: 40px;
+    }
+    .registration-pc-map-row{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .registration-pc-block{
+      position: relative;
+      background-color: #2E343B;
+      padding: 33px 10px 10px 10px;
+      display: grid;
+      width: 325px;
+      justify-items: center;
+      text-align: center;
+      grid-template-rows: auto auto 1fr;
+      height: 200px;
+    }
+    .registration-pc-block-title{
+      color: #ffcc00;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+    }
+    .registration-pc-block-number{
+      align-self: end;
+      justify-self: start;
+      color: #ffcc00;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .registration-pc-block-text{
+      color: white;
+      font-size: 14px;
+    }
+    .registration-pc-block img{
+      top: 0;
+      right: 0;
+      transform: translate(100%, calc(100px - 50%));
+      position: absolute;
+    }
+    .registration-pc-map img{
+      height: 50%;
+      transform: translate(0, 50%);
+    }
+@media(max-width: 1100px){
+
+.registration-mobile{
+      display: grid;
+    }
+    .registration-pc{
+      display: none;
+    }
+}
+.registration-pc-map{
+display: grid;
+row-gap: 35px;
+}
