@@ -2879,6 +2879,8 @@ fill: #5A5A5A;
                 }
                 .blog-map{
                   display: grid;
+                  padding: 300px 45px 60px;
+
                   justify-items: center;
                 }
                 .blog-map-image{
@@ -2896,7 +2898,6 @@ fill: #5A5A5A;
                 }
                 .blog-map-shell{
                   display: grid;
-                  padding: 300px 45px 60px;
                   justify-items: center;
                 }
                 .blog-map-shell{
@@ -2926,7 +2927,7 @@ fill: #5A5A5A;
                   font-size: 18px;
                 }
                 @media(max-width: 1100px){
-                  .blog-map-shell{
+                  .blog-map{
                     padding: 60px 33px 20px;
                   }
                   .blog-map-row{
@@ -2946,7 +2947,9 @@ fill: #5A5A5A;
                   font-weight: bold;
                   text-transform: uppercase;
                 }
+                
+                }
                 .blog-map-shell{
                   width: 100%;
                 }
-                }
+                
