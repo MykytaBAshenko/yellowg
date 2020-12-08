@@ -81,7 +81,8 @@
 		if (volume_tax > 3) {
 			if (type == 2) {
 				type_tax = 150;
-			} else {
+			} 
+			else {
 				type_tax = 100;
 			}
 		}
@@ -101,17 +102,22 @@
 			dellivery = 850;
 			customs_duty = price * 0.1;
 			customs_tax = type_tax * volume_tax * age_tax;
+
+
 			customs_all_tax = parseInt(customs_duty + customs_tax);
 			customs_vat = parseInt(price * 0.2 + customs_all_tax * 0.2)
+			if(	type != 4)
 			customs = parseInt(customs_all_tax + customs_vat);
+			else
+			customs = volume * 1.21;
 			total = Number(price) + Number(services) + Number(port) + Number(dellivery) + Number(customs);
 
-		console.log(customs_duty)
-		console.log(customs_tax)
-		console.log(customs_all_tax)
-		console.log(customs_vat)
-		console.log(customs)
-		console.log(total)
+		// console.log(customs_duty)
+		// console.log(customs_tax)
+		// console.log(customs_all_tax)
+		// console.log(customs_vat)
+		// console.log(customs)
+		// console.log(total)
 		console.log(document.getElementById("calculator-mobile-result"))
 	document.getElementById("calculator-mobile-result").className = "calculator-mobile-result"
 		$('#calculator-price-mob ').text("$"+price)
@@ -151,7 +157,7 @@
 			type_tax = 0;
 			volume_tax = 0;
 			age_tax = 0;
-
+		
 		if (!price) {
 			price = 0;
 		}
@@ -159,7 +165,6 @@
 		if (!volume) {
 			volume = 0;
 		}
-
 		// тип двигателя
 		if (type == 2) {
 			type_tax = 75;
@@ -173,7 +178,8 @@
 		if (volume_tax > 3) {
 			if (type == 2) {
 				type_tax = 150;
-			} else {
+			} 
+			else {
 				type_tax = 100;
 			}
 		}
@@ -193,16 +199,21 @@
 			dellivery = 850;
 			customs_duty = price * 0.1;
 			customs_tax = type_tax * volume_tax * age_tax;
+
+
 			customs_all_tax = parseInt(customs_duty + customs_tax);
 			customs_vat = parseInt(price * 0.2 + customs_all_tax * 0.2)
+			if(	type != 4)
 			customs = parseInt(customs_all_tax + customs_vat);
+			else
+			customs = Math.round(volume * 1.21);
 			total = Number(price) + Number(services) + Number(port) + Number(dellivery) + Number(customs);
 
 		// console.log(customs_duty)
 		// console.log(customs_tax)
 		// console.log(customs_all_tax)
 		// console.log(customs_vat)
-		// console.log(customs)
+		// console.log(customs,type)
 		// console.log(total)
 
 		$('#calculator-price .row-num').text(price)

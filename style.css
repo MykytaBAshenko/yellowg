@@ -1407,6 +1407,7 @@ height: 60px;
 
   font-size: 20px;
   line-height: 30px;
+  padding-bottom: 40px;
 }
 .blog-title{
   font-size: 30px;
@@ -3138,5 +3139,133 @@ fill: #5A5A5A;
             display: flex;
             justify-content: space-between;
         
+          }
+          }
+
+          .registration{
+            padding: 300px 45px 50px;
+            display: grid;
+            justify-items: center;
+            width: 100%;
+          }
+          .registration-main-title{
+            width: 100%;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2.85px;
+        padding-bottom:40px;
+        text-align: center;
+          }
+          .registration-shell{
+            width: 100%;
+            display: grid;
+            max-width: 1280px;
+          }
+          .registration-map{
+            display: grid;
+            row-gap: 10px;
+            justify-items: center;
+          }
+          .registration-row{
+            width: 100%;
+            background-color: #2D343A;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 15px;
+            padding: 10px 15px;
+          }
+          .registration-row-num{
+            color: #ffcc00;
+            font-size: 30px;
+      
+            font-weight: bold;
+          }
+          .registration-row-title{
+            color: #ffcc00;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+          .registration-row-text{
+            color: white;
+          }
+          .registration-row-content{
+            display: grid;
+            row-gap: 5px;
+          }
+          @media(max-width: 1100px){
+            .registration{
+            padding: 80px 25px 30px;
+            
+            } 
+            .registration-main-title{
+              font-size: 14px;
+              padding-bottom: 20px;
+            }
+            .registration-row-title{
+              font-size: 14px;
+            }
+            .registration-row-text{
+              font-size: 12px;
+            }
+            .registration-row-num{
+              font-size: 16px;
+            }
+          }
+
+          .posts-on-this-theme{
+            display: grid;
+            padding: 40px 45px;
+            justify-items: center;
+          }
+          .posts-on-this-theme-shell{
+            max-width: 1280px;
+            display: grid;
+          }
+          .posts-on-this-theme-title{
+          width: 100%;
+          font-size: 30px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 2.85px;
+          padding-bottom:40px;
+          text-align: center;
+          }
+          .posts-on-this-theme-map{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          .posts-on-this-theme-shell{
+            width: 100%;
+          }
+          .posts-on-this-theme-map a{
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d342d;
+          }
+          @media(max-width: 1100px){
+          .posts-on-this-theme-title{
+          font-size: 14px;
+          padding-bottom: 0px;
+          }
+          .posts-on-this-theme-map a{
+            font-size: 12px;
+            margin-top: 10px;
+            margin-right: 10px;
+          }
+          .posts-on-this-theme{
+            padding: 30px 25px;
+          }
+          }
+          @media(max-width: 700px){
+      
+          .posts-on-this-theme-map{
+          flex-wrap: wrap;
+          }
+          .posts-on-this-theme-map a{
+            
+          width: calc(50% - 10px);
           }
           }
