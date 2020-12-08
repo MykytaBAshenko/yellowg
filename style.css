@@ -2715,7 +2715,7 @@ fill: #5A5A5A;
     }
     .blog-title{
         font-weight: bold;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         padding-bottom: 20px;
     }
@@ -2953,3 +2953,156 @@ fill: #5A5A5A;
                   width: 100%;
                 }
                 
+                .zapchasti{
+                  padding: 85px 45px 100px;
+                  display: grid;
+                  justify-items: center;
+                }
+                .zapchasti-title{
+                  font-size: 30px;
+                  color: #2e343b;
+                  font-weight: bold;
+                }
+                .zapchasti-block{
+                  max-width: 240px;
+                  width: 100%;
+                  position: relative;
+                height: 300px;
+                background-color: #e9ebee;
+                overflow: hidden;
+                }
+                .zapchasti-shell{
+                  max-width: 1280px;
+                  display: grid;
+                  justify-items: center;
+                  width: 100%;
+                }
+                .zapchasti-main-title{
+                  font-size: 30px;
+                font-weight: 800;
+                width: 100%;
+                text-transform: uppercase;
+                padding-bottom: 70px;
+                }
+              .zapchasti-title{
+                font-weight: bold;
+                font-size: 21px;
+                text-transform: uppercase;
+                position: relative;
+                padding: 30px 0 0 20px;
+            }
+            .zapchasti-title::after{
+              content: "";
+              width: 80px;
+              height: 4px;
+              background-color: #ffcc00;
+            }
+            .zapchasti-block img{
+              width: 200px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 4;
+              transform: translate(60px, 80px);
+            }
+            .zapchasti-yellow-line{
+              width: 100%;
+              height: 20px;top: 0;
+              position: absolute;
+              transform: translate(0,240px);
+              background-color: #ffcc00;
+              
+            }
+            .zapchasti-map{
+              width: 100%;
+              display: flex;
+              /* width: 100%;
+              grid-template-columns: 1fr 1fr 1fr 1fr; */
+              justify-content: space-between;
+            }
+            .pading-top-50{
+              padding-top: 50px;
+            }
+            
+            img.fara-from-zapchasti{
+              width: 150px;
+              margin-left: 45px;
+            }
+            
+            @media(max-width: 1100px){
+              .zapchasti-map{
+              
+              max-width: 600px;
+              display: grid;
+              justify-items: center;
+              row-gap: 20px;
+              column-gap: 20px;
+              grid-template-columns: 1fr 1fr;
+            }
+            .zapchasti-title{
+              font-size: 14px;
+            }
+            .zapchasti-main-title{
+                text-align: center;
+                padding-bottom: 20px;
+              }
+              .zapchasti {
+                padding: 20px 33px;
+              }
+              .zapchasti-main-title{
+                font-size: 14px;
+              }
+              .zapchasti-block{
+                width: 100%;
+              }
+            }
+            .zapchasti-title::after{
+              content: "";
+              width: 80px;
+              height: 4px;
+              position: absolute;transform: translate(20px, 30px);
+              background-color: #ffcc00;
+              left: 0;
+            }
+            @media(max-width: 700px){
+              .zapchasti-map{
+              width: 100%;
+              display: grid;
+              justify-items: center;
+              row-gap: 20px;
+              column-gap: 20px;
+              grid-template-columns: 1fr 1fr;
+            }
+            }
+            @media(max-width: 600px){
+              .zapchasti-block img{
+              width: 120px;
+              transform: translate(60px, 70px);
+            }
+            .zapchasti-block {
+              max-width: 170px;
+            }
+            .zapchasti-yellow-line{
+              transform: translate(0,170px);
+              background-color: #ffcc00;
+              
+            }
+            img.fara-from-zapchasti {
+              margin-left: 0;
+              margin-top: -25px;
+            }
+            .zapchasti-block {
+              height: 220px;
+            }
+            }
+            @media(max-width: 420px){
+              .zapchasti-block img{
+              width: 120px;
+              transform: translate(40px, 70px);
+            
+            }.zapchasti{
+              padding: 20px 10px;
+            }
+            
+            }
+            
