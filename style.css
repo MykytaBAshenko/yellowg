@@ -2622,8 +2622,14 @@ fill: #5A5A5A;
   .contacts{
       display: none;
   }
-  footer{
-      display: none;
+  .footer-shell{
+    grid-template-columns: 1fr auto;
+  }
+  .footer-meta-container{
+    font-size: 12px;
+  }
+  .footer-contacts{
+    display: none;
   }
   .footer-mobile{
           display: grid;

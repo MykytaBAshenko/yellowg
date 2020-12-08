@@ -528,6 +528,9 @@
 			 });
 	}	
 })
+$('.callback__bg, .callback__close').click(function(){ $('.callback').fadeOut(200) })
+$('.success__bg, .success__close, .success__button .button').click(function(){ $('.success').fadeOut(200) })
+
 
 let mobile_btn = document.getElementById("mobile-control-btn")
 let mobile_menu = document.getElementById("mobile-menu")
