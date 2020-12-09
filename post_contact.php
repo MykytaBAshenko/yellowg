@@ -6,8 +6,6 @@
     $data = isset($_POST['data_json']) ? json_decode($_POST['data_json']) : [];
     
     $to = 'salesygarage@gmail.com';
-    // $to = 'nikita.bashenko2001@gmail.com';
-    // $to = 'bykovskyi.misha@gmail.com'; 
     
     $headers = "From: mypost@mail.domain\nReply-To: no-reply@mail.domain\r\n";
     $headers.= "Content-type: text/plain; charset=UTF-8\r\n";
