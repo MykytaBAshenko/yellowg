@@ -597,11 +597,11 @@ let ctrl5 = document.getElementById("ctrl-btn5")
 let btns = document.getElementsByClassName("btn-video-ctr")
 //   let 
 let arr_v = [
-  "https://www.youtube.com/embed/5gYoUm3wLHI",
-  "https://www.youtube.com/embed/FwUsIr5OHFE",
-  "https://www.youtube.com/embed/uhNHX5fbnkg",
-  "https://www.youtube.com/embed/FwUsIr5OHFE",
-  "https://www.youtube.com/embed/uhNHX5fbnkg"
+  "https://www.youtube.com/embed/v-bWohi_k4E",
+  "https://www.youtube.com/embed/v-bWohi_k4E",
+  "https://www.youtube.com/embed/v-bWohi_k4E",
+  "https://www.youtube.com/embed/v-bWohi_k4E",
+  "https://www.youtube.com/embed/v-bWohi_k4E",
 ]
 if(videodivm)
 function video_mobile_c(n){
