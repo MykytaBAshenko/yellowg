@@ -370,7 +370,11 @@
 
 
 
+	$('.success').fadeIn(200)
 
+	setTimeout(function(){
+		$('.success').fadeOut(200)
+	}, 100000)
 
 
 	$('#reasons_for_work_form-flat').submit(function(e){
