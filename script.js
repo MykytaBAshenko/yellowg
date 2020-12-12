@@ -230,10 +230,15 @@
 	// faq
 	$('.faq-item').click(function(){
 		if (!$(this).hasClass('active')) {
+			console.log(1)
 			$('.faq-item').removeClass('active')
 			$('.faq-item__body').slideUp(200)
 			$(this).toggleClass('active')
 			$(this).find('.faq-item__body').slideDown(200)	
+		}
+		else if ($(this).hasClass('active')) {
+			$('.faq-item').removeClass('active')
+			$('.faq-item__body').slideUp(200)
 		}
 	})
 
