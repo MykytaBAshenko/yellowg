@@ -312,7 +312,7 @@ display: grid;
 padding: 0 45px;
 align-items: end;
 justify-items: center;
-background-image: url(images/bgimg.jpg);
+background-image: url(images/bgimagemain.webp);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
@@ -1676,6 +1676,7 @@ html, body {
 .success {
   display: none;
   position: fixed;
+  background-color: transparent;
   width: 100%;
   max-width: 100%;
   height: 100%;

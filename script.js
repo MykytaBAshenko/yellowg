@@ -360,9 +360,9 @@
 
 			$('.success').fadeIn(200)
 
-			setTimeout(function(){
-				$('.success').fadeOut(200)
-			}, 3000)
+			// setTimeout(function(){
+			// 	$('.success').fadeOut(200)
+			// }, 3000)
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
 			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -415,9 +415,9 @@
 
 			$('.success').fadeIn(200)
 
-			setTimeout(function(){
-				$('.success').fadeOut(200)
-			}, 3000)
+			// setTimeout(function(){
+			// 	$('.success').fadeOut(200)
+			// }, 3000)
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
 			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -540,9 +540,9 @@
 
 			$('.success').fadeIn(200)
 
-			setTimeout(function(){
-				$('.success').fadeOut(200)
-			}, 3000)
+			// setTimeout(function(){
+			// 	$('.success').fadeOut(200)
+			// }, 3000)
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
 			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
