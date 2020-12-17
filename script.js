@@ -609,9 +609,9 @@ let btns = document.getElementsByClassName("btn-video-ctr")
 //   let 
 let arr_v = [
   "https://www.youtube.com/embed/Vubij91bDBk",
-  "https://www.youtube.com/embed/v-bWohi_k4E",
-  "https://www.youtube.com/embed/v-bWohi_k4E",
-  "https://www.youtube.com/embed/v-bWohi_k4E",
+  "https://www.youtube.com/embed/1LOVi8Q-RxY",
+  "https://www.youtube.com/embed/ch8lRl-GWD4",
+  "https://www.youtube.com/embed/cAmCqVWeHpI",
 ]
 if(videodivm)
 function video_mobile_c(n){

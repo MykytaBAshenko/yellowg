@@ -316,7 +316,7 @@ display: grid;
 padding: 0 45px;
 align-items: end;
 justify-items: center;
-background-image: url(images/ded-moroz.jfif);
+background-image: url(images/bgimg2.jpg);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
@@ -373,14 +373,14 @@ text-align: center;
     justify-content: center;
 }
 .start-content-btn-about{
-    color:#2d342d;
-    background-color: white;
+    color: #2d342d;
     border: 2px solid white;
-}
+    background-color: white;
+  }
 
 .start-content-btn-phone{
     background: #ffcc00;
-    color: #333333;
+    color:#2d342d;
     border: 2px solid #ffcc00;
 }
 .start-content-btn-phone span{
@@ -1880,15 +1880,13 @@ width: 100%;
 display: grid;
 align-items: end;
 justify-items: center;
-background-image: url(images/ded-moroz.jfif);
+background-image: url(images/bgimg2.jpg);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
-padding: 10px 38px 15px;
+padding: 0 38px 15px;
 background-size: cover;
-background-size: 100%;
 position: relative;
-
 color: #fff;
 text-align: center;}
 .mob-start-content{
@@ -2131,7 +2129,7 @@ color: #2D343A;
 }
 .vigoda-mobile-control{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
 } 
 .vigoda-mobile-control button{
@@ -2280,6 +2278,7 @@ margin:0;
 font-weight: bold;
 font-size: 8px;
 }
+
 .calculator-form__row--type{
 margin-top: 11px;
 }
