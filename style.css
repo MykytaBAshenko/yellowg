@@ -14,6 +14,10 @@ body{
   height: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
+html{
+  scroll-behavior: smooth;
+
+}
 body > *{
   width: 100%;
   background-color: white;
@@ -312,7 +316,7 @@ display: grid;
 padding: 0 45px;
 align-items: end;
 justify-items: center;
-background-image: url(images/bgimagemain.webp);
+background-image: url(images/ded-moroz.jfif);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
@@ -369,13 +373,14 @@ text-align: center;
     justify-content: center;
 }
 .start-content-btn-about{
-    color: white;
+    color:#2d342d;
+    background-color: white;
     border: 2px solid white;
 }
 
 .start-content-btn-phone{
     background: #ffcc00;
-    color: #333333;
+    color: #2d342d;
     border: 2px solid #ffcc00;
 }
 .start-content-btn-phone span{
@@ -1875,7 +1880,7 @@ width: 100%;
 display: grid;
 align-items: end;
 justify-items: center;
-background-image: url(images/bgimagemain.webp);
+background-image: url(images/ded-moroz.jfif);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
@@ -2272,9 +2277,6 @@ margin:0;
 .calculator-mobile-control .name{
 font-weight: bold;
 font-size: 8px;
-}
-.calculator-form__row--type .type-item {
-
 }
 .calculator-form__row--type{
 margin-top: 11px;
@@ -2994,8 +2996,7 @@ fill: #5A5A5A;
                   color: #2e343b;
                   font-weight: bold;
                 }
-                .blog-map-content{
-                }
+
                 .blog-map-title:hover{
                 text-decoration: underline;
                 }

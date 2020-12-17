@@ -608,8 +608,7 @@ let ctrl5 = document.getElementById("ctrl-btn5")
 let btns = document.getElementsByClassName("btn-video-ctr")
 //   let 
 let arr_v = [
-  "https://www.youtube.com/embed/v-bWohi_k4E",
-  "https://www.youtube.com/embed/v-bWohi_k4E",
+  "https://www.youtube.com/embed/Vubij91bDBk",
   "https://www.youtube.com/embed/v-bWohi_k4E",
   "https://www.youtube.com/embed/v-bWohi_k4E",
   "https://www.youtube.com/embed/v-bWohi_k4E",
