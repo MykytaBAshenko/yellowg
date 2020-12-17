@@ -6,10 +6,6 @@
   box-sizing:border-box;
   text-decoration: none;
 }
-html{
-  scroll-behavior: smooth;
-
-}
 body{
   color: #2d342d;
   display: grid;
@@ -316,7 +312,7 @@ display: grid;
 padding: 0 45px;
 align-items: end;
 justify-items: center;
-background-image: url(images/bgimg2.jpg);
+background-image: url(images/bgimagemain.webp);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
@@ -1879,7 +1875,7 @@ width: 100%;
 display: grid;
 align-items: end;
 justify-items: center;
-background-image: url(images/bgimg2.jpg);
+background-image: url(images/bgimagemain.webp);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
