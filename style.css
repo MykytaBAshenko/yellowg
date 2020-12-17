@@ -380,7 +380,7 @@ text-align: center;
 
 .start-content-btn-phone{
     background: #ffcc00;
-    color: #2d342d;
+    color: #333333;
     border: 2px solid #ffcc00;
 }
 .start-content-btn-phone span{
@@ -1886,6 +1886,7 @@ background-position: center;
 background-repeat: no-repeat;
 padding: 0 38px 15px;
 background-size: cover;
+background-size: 100%;
 position: relative;
 color: #fff;
 text-align: center;}
