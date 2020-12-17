@@ -1863,7 +1863,6 @@ display: block;
 }
 @media (max-width: 1200px) {
 .form-social-control-container-shell {
-
 column-gap: 30px;
 }
 }
