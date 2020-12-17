@@ -1884,10 +1884,11 @@ background-image: url(images/ded-moroz.jfif);
 background-color: black;
 background-position: center;
 background-repeat: no-repeat;
-padding: 0 38px 15px;
+padding: 10px 38px 15px;
 background-size: cover;
 background-size: 100%;
 position: relative;
+
 color: #fff;
 text-align: center;}
 .mob-start-content{
