@@ -3608,3 +3608,70 @@ row-gap: 35px;
 .faq-columns .faq-item.active .question-arrow {
   transform: rotate(90deg);
 }
+
+
+
+.start-section-new-year{
+  background-image: url("images/ded-moroz.jpg");
+  background-color: black;
+background-position: center;
+background-repeat: no-repeat;
+height: 650px;
+display: grid;
+justify-items: center;
+align-items: center;
+background-size: cover;
+position: relative;
+}
+.start-section-new-year{
+margin-top: 200px;  
+}
+.start-section-shell{
+  max-width: 1280px;
+  padding: 0 45px;
+  width: 100%;
+  display: grid;
+  justify-items: left;
+}
+.start-section-content{
+  max-width: 800px;
+  display: grid;
+  justify-items: left;
+}
+.start-section-main-text{
+  font-size: 30px;
+  letter-spacing:3.9px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-bottom:220px;
+  font-weight: bold;
+  color: white;
+}
+@media(max-width: 1100px){
+  .start-section-new-year{
+      display: none;
+  }
+}
+
+
+.mob-start-cont-shell{
+  background-image: url("images/ded-moroz.jpg");
+  background-color: black;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 310px;
+display: grid;
+padding: 80px 40px 20px;
+justify-items: center;
+align-items: center;
+background-size: cover;
+position: relative;
+}
+.mob-start-cont-text{
+  font-size: 25px;
+  color: white;
+
+  font-weight: bold;
+  letter-spacing:2.6px;
+
+}
