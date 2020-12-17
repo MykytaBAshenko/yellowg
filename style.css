@@ -992,9 +992,7 @@ footer{
 
 
 
-.contacts-container-map{
 
-}
 .contacts_title{
   font-size: 30px;
   font-weight: 800;
@@ -1047,8 +1045,7 @@ footer{
    border-color: #333333;
    color: #ffcc00;
 }
-.contacts-container-form form{
-}
+
 .contacts-container-form-row{
    display: grid;
    max-width: 100%;
@@ -1192,8 +1189,7 @@ max-width: 1280px;
     margin-bottom: 30px;
   }
 }
-.calculator-form {
-}
+
 .calculator-form:after {
   content: "";
   display: block;
