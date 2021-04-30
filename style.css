@@ -1803,7 +1803,7 @@ display: block;
   text-transform: uppercase;
 }
 .mobile-navbar-list li{
-  background-color: #333333;
+  background-color: #2D343A;
   padding: 18px 38px 19px 0;
   text-align: right;
   width: 230px;
@@ -2533,7 +2533,7 @@ fill: #5A5A5A;
        row-gap: 15px;
    }
    .news-blog-block{
-       text-align: дуае;
+       text-align: Ð´ÑƒÐ°Ðµ;
        text-transform: none;
    }
   }
@@ -2574,7 +2574,7 @@ fill: #5A5A5A;
 .partners-list{
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -2590,7 +2590,8 @@ fill: #5A5A5A;
       padding: 20px 35px 30px;
   }
   .partners-list img{
-    max-width: 80%;
+    max-width: 70%;
+    margin: 4px;
   }
   .partners-title {
       text-align: center;
@@ -2598,7 +2599,8 @@ fill: #5A5A5A;
       margin-bottom: 10px;
   }
   .partners-list{
-    
+    display: block;
+    text-align: center;
     row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -2962,7 +2964,7 @@ fill: #5A5A5A;
                 .blog-map-image{
                         position: relative;
                   height: 140px;
-                  background: #fc0;
+                  /* background: #fc0; */
                   overflow: hidden;
                 }
                 .blog-map-image img{
@@ -3607,7 +3609,7 @@ row-gap: 35px;
 
 
 .start-section-new-year{
-  background-image: url("images/ded-moroz.jpg");
+  background-image: url("images/bgimg2.jpg");
   background-color: black;
 background-position: center;
 background-repeat: no-repeat;
@@ -3635,10 +3637,10 @@ margin-top: 200px;
 }
 .start-section-main-text{
   font-size: 30px;
-  letter-spacing:3.9px;
+  letter-spacing:0.9px;
   line-height: 42px;
   text-transform: uppercase;
-  margin-bottom:220px;
+  margin-bottom:190px;
   font-weight: bold;
   color: white;
 }
@@ -3650,23 +3652,23 @@ margin-top: 200px;
 
 
 .mob-start-cont-shell{
-  background-image: url("images/ded-moroz.jpg");
+  background-image: url("images/bgimg2.jpg");
   background-color: black;
 background-position: center;
 background-repeat: no-repeat;
 min-height: 310px;
 display: grid;
-padding: 80px 40px 20px;
+padding: 0px 53px 111px;
 justify-items: center;
 align-items: center;
 background-size: cover;
 position: relative;
 }
 .mob-start-cont-text{
-  font-size: 25px;
+  font-size: 14px;
   color: white;
-
+  text-shadow: black 2px 2px 2px;
   font-weight: bold;
-  letter-spacing:2.6px;
+  letter-spacing:0.3px;
 
 }
